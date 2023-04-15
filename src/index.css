@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+.wrapper {
+  @apply max-w-[1170px] px-[15px] mx-auto py-5;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 200vh;
+  background-color: #333;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(57, 57, 57, 0.6);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+/* end */
+
+body{
+  background-color: #000;
+}
+#root {
+  min-height: 100vh;
+}
+.bp{
+  border-radius:68% 32% 44% 56% / 61% 1% 99% 39% ;
+background-color: green;
+}
+.typewriterpara{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: green;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#F2C, rgb(60, 34, 255)) */
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#000, #fff);
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  line-height: 1.2;
+}
+
+.portfolio,
+.contact {
+  margin-top: 8%;
+}
+
+.experience {
+  margin-top: 12%;
+}
+
+
+.nav-links {
+  text-underline-offset: 1rem;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  #root {
+    
+    min-height: 100vh;
+  }
+  .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding-bottom: 10%;
+}
+  .about,
+  .contact,
+  .portfolio,
+  .experience,
+  .home {
+    text-align: center;
+    height: 100%;
+  }
+
+  .about1{
+    margin-top: 10%;
+    text-align: center;
+width: auto;
+    height: 100%;
+  }
+  .about2{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .portfolio,
+  .experience {
+    margin-top: 5%;
+  }
+
+  .home img {
+    margin-top: 8%;
+    border-radius:68% 32% 44% 56% / 61% 1% 99% 39% ;
+    background-color: green;
+
+  }
+  
+  .small-screen {
+    display: block;
+    border-radius:68% 32% 44% 56% / 61% 1% 99% 39% ;
+    background-color: green;
+  
+  }
+
+  .big-screen {
+    display: none;
+  }
+
+ 
+
+  .home h2 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-top: 7%;
+  }
+
+  .portfolio-btn {
+    margin: auto;
+  }
+
+  .px-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
