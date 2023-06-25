@@ -63,7 +63,7 @@ const Home = () => {
               className="group text-white w-fit px-6 py-3 my-5 flex items-center bg-orange-500 border-2 
               rounded-full p-4 shadow-lg text-2xl cursor-pointer hover:scale-105 duration-500"
             >
-              Portfolio
+              Portfoli
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
