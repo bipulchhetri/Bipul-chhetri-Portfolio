@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { images, portfolio,btns } from "../Data";
+import { images, btns } from "../Data";
 
 
 const Filter = () => {
@@ -8,15 +8,15 @@ const Filter = () => {
   console.log(filterImages);
 
   useEffect(() => {
-    setFilterImages(portfolio);
+    setFilterImages(images);
   }, []);
 
   const handleClick = (e) => {
     const btnValue = e.target.value;
     setActive(btnValue);
-    const newFilterImages = portfolio.filter((item) => item.category === btnValue);
+    const newFilterImages = images.filter((item) => item.category === btnValue);
     if (btnValue === "all") {
-      setFilterImages(portfolio);
+      setFilterImages(images);
     } else {
       setFilterImages(newFilterImages);
     }
