@@ -23,7 +23,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-           Hi, I'm Bipul
+           Hi, I'm Bipul Chhetri
           </h2>
           <Typewriter
             options={{
